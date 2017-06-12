@@ -3,19 +3,12 @@
           
 	        {{ range $.Site.Params.social }}
 	        <li>
-	          <a href="{{ .link }}">
+	          <a href="{{ .link }}" target="_blank">
 	            <i class="{{ .icon_pack }} {{ .icon_pack}}-{{ .icon }} fa-fw"></i>
 	            {{ .text }}
 	          </a>
 	         </li>
 	        {{ end }}
-          
-          
-          <li>
-            <a href="https://gohugo.io/" class="footer-links-kudos">
-              Made with <img src='{{ "images/hugo-logo.png" | relURL }}' width="22" height="22">
-            </a>
-          </li>
           
         </ul>
       </footer>
